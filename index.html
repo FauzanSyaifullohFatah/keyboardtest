@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Keyboard Virtual Test</title>
+</head>
+<body onkeydown="pressDown(event);" onkeyup="pressUp(event);">
+    <main>
+        <div class="keyboard">
+            <div class="row">
+                <div class="key">
+                    <p>~</p>
+                    <p>`</p>
+                </div>
+                <div class="key">
+                    <p>!</p>
+                    <p>1</p>
+                </div>
+                <div class="key">
+                    <p>@</p>
+                    <p>2</p>
+                </div>
+                <div class="key">
+                    <p>#</p>
+                    <p>3</p>
+                </div>
+                <div class="key">
+                    <p>$</p>
+                    <p>4</p>
+                </div>
+                <div class="key">
+                    <p>%</p>
+                    <p>5</p>
+                </div>
+                <div class="key">
+                    <p>^</p>
+                    <p>6</p>
+                </div>
+                <div class="key">
+                    <p>&</p>
+                    <p>7</p>
+                </div>
+                <div class="key">
+                    <p>*</p>
+                    <p>8</p>
+                </div>
+                <div class="key">
+                    <p>(</p>
+                    <p>9</p>
+                </div>
+                <div class="key">
+                    <p>)</p>
+                    <p>0</p>
+                </div>
+                <div class="key">
+                    <p>_</p>
+                    <p>-</p>
+                </div>
+                <div class="key">
+                    <p>+</p>
+                    <p>=</p>
+                </div>
+                <div class="key">
+                    <p>delete</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="key">
+                    <p>tab</p>
+                </div>
+                <div class="key">
+                    <p>Q</p>
+                </div>
+                <div class="key">
+                    <p>W</p>
+                </div>
+                <div class="key">
+                    <p>E</p>
+                </div>
+                <div class="key">
+                    <p>R</p>
+                </div>
+                <div class="key">
+                    <p>T</p>
+                </div>
+                <div class="key">
+                    <p>Y</p>
+                </div>
+                <div class="key">
+                    <p>U</p>
+                </div>
+                <div class="key">
+                    <p>I</p>
+                </div>
+                <div class="key">
+                    <p>O</p>
+                </div>
+                <div class="key">
+                    <p>P</p>
+                </div>
+                <div class="key">
+                    <p>{</p>
+                    <p>[</p>
+                </div>
+                <div class="key">
+                    <p>}</p>
+                    <p>]</p>
+                </div>
+                <div class="key">
+                    <p>|</p>
+                    <p>\</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="key">
+                    <p>caps lock</p>
+                    <div class="led"></div>
+                </div>
+                <div class="key">
+                    <p>A</p>
+                </div>
+                <div class="key">
+                    <p>S</p>
+                </div>
+                <div class="key">
+                    <p>D</p>
+                </div>
+                <div class="key">
+                    <p>F</p>
+                </div>
+                <div class="key">
+                    <p>G</p>
+                </div>
+                <div class="key">
+                    <p>H</p>
+                </div>
+                <div class="key">
+                    <p>J</p>
+                </div>
+                <div class="key">
+                    <p>K</p>
+                </div>
+                <div class="key">
+                    <p>L</p>
+                </div>
+                <div class="key">
+                    <p>:</p>
+                    <p>;</p>
+                </div>
+                <div class="key">
+                    <p>"</p>
+                    <p>'</p>
+                </div>
+                <div class="key">
+                    <p>enter</p>
+                    <p>return</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="key">shift</div>
+                <div class="key">
+                    <p>Z</p>
+                </div>
+                <div class="key">
+                    <p>X</p>
+                </div>
+                <div class="key">
+                    <p>C</p>
+                </div>
+                <div class="key">
+                    <p>V</p>
+                </div>
+                <div class="key">
+                    <p>B</p>
+                </div>
+                <div class="key">
+                    <p>N</p>
+                </div>
+                <div class="key">
+                    <p>M</p>
+                </div>
+                <div class="key">
+                    <p><</p>
+                    <p>,</p>
+                </div>
+                <div class="key">
+                    <p>></p>
+                    <p>.</p>
+                </div>
+                <div class="key">
+                    <p>?</p>
+                    <p>/</p>
+                </div>
+                <div class="key">
+                    <p>shift</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="key">
+                    <p>fn</p>
+                </div>
+                <div class="key">
+                    <p>control</p>
+                </div>
+                <div class="key">
+                    <p>alt</p>
+                    <p>option</p>
+                </div>
+                <div class="key">
+                    <p>command</p>
+                </div>
+                <div class="key">
+                    <p id="space">space</p>
+                </div>
+                <div class="key">
+                    <p>command</p>
+                </div>
+                <div class="key">
+                    <p>alt</p>
+                    <p>option</p>
+                </div>
+                <div class="key">
+                    <div class="arrow" id="left"><i class="fa fa-caret-left"></i></div>
+                    <div class="arrow" id="bottom"><i class="fa fa-caret-down"></i></div>
+                    <div class="arrow" id="right"><i class="fa fa-caret-right"></i></div>
+                    <div class="arrow" id="up"><i class="fa fa-caret-up"></i></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
